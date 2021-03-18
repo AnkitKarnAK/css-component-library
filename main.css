@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.layout {
+    border: 1px solid black;
+    margin: 0rem 10rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "head head head head head head"
+        "nav doc doc doc doc doc"
+        "nav doc doc doc doc doc"
+}
+
+.head {
+    grid-area: head;
+}
+
+.nav {
+    grid-area: nav;
+    position: fixed;
+    top: 3.5rem
+}
+
+.doc {
+    grid-area: doc;
+}
+
+.component {
+    padding: 1rem;
+}
+
+.alert {
+    margin: 1rem 0;
+}
+
+.badge-container {
+    margin: 1rem 0;
+}
+
+.badge-container>img {
+    width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:link,
+.nav a:visited {
+    color: rgb(40, 116, 240);
+}
+
+.nav a:active {
+    color: hotpink;
+}
+
+.float-button {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img-container {
+    width: 20rem;
+}
+
+
+.input-box {
+    width: 50%;
+}
+
+
+.modal-container {
+    position: static;
+}

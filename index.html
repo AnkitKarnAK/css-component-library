@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK component Library</title>
+    <link rel="stylesheet" href="componentStyles.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="layout">
+        <h1 class="head">
+            <strong>AK Component Library: </strong> A component library for your CSS needs.
+        </h1>
+        <div class="nav">
+            <h3>Components</h3>
+            <ul class="list non-bullet">
+                <li class="list-item">
+                    <a href="#avatar-component">Avatar</a>
+                </li>
+                <li class="list-item">
+                    <a href="#alert-component">Alert</a>
+                </li>
+                <li class="list-item">
+                    <a href="#badge-component">Badge</a>
+                </li>
+                <li class="list-item">
+                    <a href="#button-component">Button</a>
+                </li>
+                <li class="list-item">
+                    <a href="#card-component">Card</a>
+                </li>
+                <li class="list-item">
+                    <a href="#image-component">Image</a>
+                </li>
+                <li class="list-item">
+                    <a href="#input-component">Input</a>
+                </li>
+                <li class="list-item">
+                    <a href="#list-component">List</a>
+                </li>
+                <li class="list-item">
+                    <a href="#navigation-component">Navigation</a>
+                </li>
+                <li class="list-item">
+                    <a href="#modal-component">Modal</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="doc">
+            <div id="avatar-component">
+                <h3>Avatar</h3>
+
+                <img class="avatar" src="images/avatar-icon-male.svg" alt="avatar-icon" />
+
+
+
+                <xmp>
+                    <img class="avatar" src="/" />
+                </xmp>
+            </div>
+
+            <hr>
+
+            <div id="alert-component">
+                <h3>Alert</h3>
+                <div class="alert alert-primary">This is Primary Alert</div>
+                <div class="alert alert-secondary">This is Secondary Alert</div>
+                <div class="alert alert-error">This is Error Alert</div>
+                <div class="alert alert-warning">This is Warning Alert</div>
+                <div class="alert alert-success">This is Success Alert</div>
+
+                <xmp>
+                    <div class="alert alert-primary"></div>
+                    <div class="alert alert-secondary"></div>
+                    <div class="alert alert-error"></div>
+                    <div class="alert alert-warning"></div>
+                    <div class="alert alert-success"></div>
+                </xmp>
+            </div>
+
+            <hr>
+
+            <div id="badge-component">
+                <h3>Badge</h3>
+                <h4>Badge on Avatar</h4>
+                <div class="badge-container">
+                    <img class="avatar" src="images/avatar-icon-male.svg" />
+                    <div class="avatar-badge avatar-badge-online"></div>
+                </div>
+                <div class="badge-container">
+                    <img class="avatar" src="images/avatar-icon-female.svg" />
+                    <div class="avatar-badge avatar-badge-offline"></div>
+                </div>
+
+                <xmp>
+                    <div class="badge-container">
+                        <img class="avatar" src="/" />
+                        <div class="avatar-badge avatar-badge-online"></div>
+                        <div class="avatar-badge avatar-badge-offline"></div>
+                    </div>
+                </xmp>
+                <h4>Badge on Icon</h4>
+                <div class="badge-container">
+                    <img src="images/bell-icon.svg" />
+                    <div class="icon-badge">2</div>
+                </div>
+                <xmp>
+                    <div class="badge-container">
+                        <img src="/" />
+                        <div class="icon-badge">2</div>
+                    </div>
+                </xmp>
+                <strong>Note: </strong> adjust width & height of badge container, default is 2.5 rem
+            </div>
+
+            <hr>
+
+            <div id="button-component">
+                <h3>Button</h3>
+                <h4>Primary / Secondary Button</h4>
+
+                <button class="button-primary">Primary Button</button>
+                <button class="button-secondary">Secondary Button</button>
+
+                <xmp>
+                    <button class="button-primary">text</button>
+                    <button class="button-secondary">text</button>
+                </xmp>
+
+                <h4>Link Button</h4>
+
+                <button class="link-button button-primary"><a href=""> Link button Primary</a></button>
+                <button class="link-button button-secondary"><a href=""> Link button Secondary</a></button>
+
+                <xmp>
+                    <button class="button-primary link-button"><a href="">Text</a></button>
+                    <button class="button-secondary link-button"><a href="">Text</a></button>
+                </xmp>
+
+                <h4>Icon Button</h4>
+
+                <button class="icon-button"><img src="images/message-icon.svg" /></button>
+
+                <xmp>
+                    <button class="icon-button"><img src="" /></button>
+                </xmp>
+
+                <strong>Note: </strong> default height/width of icon button is 2.5 rem
+                <br />
+
+                <h4>Floating Action Button</h4>
+
+                <button class="float-button"> + </button>
+
+                <xmp>
+                    <button class="float-button"> + </button>
+                </xmp>
+
+
+                <strong>Note: </strong> Actual floating button is of Fixed position with 5 rem distance from bottom
+                &
+                right. Just for demonstartion purpose it's shown with normal layout here instead of as actual
+                floating
+                button.
+
+
+
+
+            </div>
+
+
+            <hr>
+
+
+            <div id="card-component">
+                <h3>Card</h3>
+
+                <h4>Card with badge</h4>
+
+                <div class="card-container">
+                    <div class="card-image">
+                        <img src="images/badminton.jpg" />
+                        <div class="card-badge">
+                            New
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>This is Heading</h3>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid ab temporibus
+                            nisi suscipit vero voluptas harum laboriosam quo dignissimos modi, ea ipsam tempora nulla
+                            fuga, earum nemo assumenda quidem.
+                        </div>
+                    </div>
+                </div>
+
+                <xmp>
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" />
+                            <div class="card-badge">
+                                New
+                            </div>
+                        </div>
+
+                    </div>
+
+                </xmp>
+
+                <strong>Note: </strong> badge is positioned absolute with distance of 7px from top & 8px from left.
+
+
+                <h4>Card with dismiss</h4>
+
+                <div class="card-container">
+                    <div class="card-image">
+                        <img src="images/badminton.jpg" />
+                        <div class="card-dismiss">
+                            X
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>This is Heading</h3>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid ab temporibus
+                            nisi suscipit vero voluptas harum laboriosam quo dignissimos modi, ea ipsam tempora nulla
+                            fuga, earum nemo assumenda quidem.
+                        </div>
+                    </div>
+                </div>
+
+                <xmp>
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" />
+                            <div class="card-dismiss">
+                                X
+                            </div>
+                        </div>
+
+                    </div>
+
+                </xmp>
+
+                <strong>Note: </strong> dismiss cross icon is positioned absolute with distance of 0 from top &
+                right.
+
+
+                <h4>Card with text overlay</h4>
+
+                <div class="card-container">
+                    <div class="card-image overlay">
+                        <img src="images/badminton.jpg" />
+                        <div class="card-overlay">
+                            This is text overlay
+                        </div>
+
+
+                    </div>
+                    <div class="card-body">
+                        <h3>This is Heading</h3>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid ab temporibus
+                            nisi suscipit vero voluptas harum laboriosam quo dignissimos modi, ea ipsam tempora nulla
+                            fuga, earum nemo assumenda quidem.
+                        </div>
+                    </div>
+                </div>
+
+                <xmp>
+                    <div class="card-container">
+                        <div class="card-image">
+                            <img src="" />
+                            <div class="card-overlay">
+                                Overlay Text
+                            </div>
+                        </div>
+
+                    </div>
+
+                </xmp>
+
+                <strong>Note: </strong> overlay text is positioned absolute with distance of 25% from top & 10% from
+                right.
+
+
+                <h4>Text only card</h4>
+
+                <div class="card-container">
+                    <div class="card-body">
+                        <h3>This is Heading</h3>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid ab temporibus
+                            nisi suscipit vero voluptas harum laboriosam quo dignissimos modi, ea ipsam tempora nulla
+                            fuga, earum nemo assumenda quidem.
+                        </div>
+                    </div>
+                </div>
+
+                <xmp>
+                    <div class="card-container">
+                        <div class="card-body">
+                            <h3>Heading</h3>
+                            <div class="card-content">
+                                card content text
+                            </div>
+                        </div>
+                    </div>
+
+                </xmp>
+
+
+                <h4>Horizontal cards</h4>
+
+                <div class="card-container-horizontal">
+                    <div class="card-horizontal-image">
+                        <!-- <img src="https://via.placeholder.com/728x480.png" /> -->
+                        <img src="images/badminton.jpg" />
+
+                    </div>
+                    <div class="card-badge">
+                        New
+                    </div>
+                    <div class="card-dismiss">
+                        X
+                    </div>
+                    <div class="card-horizontal-body">
+                        <h3>This is Heading</h3>
+                        <div class="card-horizontal-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum amet voluptates natus aliquam
+                            ducimus at officia quia in ab veropa, possimus fugit
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <xmp>
+                    <div class="card-container-horizontal">
+                        <div class="card-horizontal-image">
+                            <img src="" />
+                        </div>
+                        <div class="card-horizontal-body">
+                            <h3>Heading</h3>
+                            <div class="card-horizontal-content">
+                                body text
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+
+                <h4>Crads with Shadow</h4>
+
+                <div class="card-container card-shadow">
+                    <div class="card-image">
+                        <img src="images/badminton.jpg" />
+                        <div class="card-badge">
+                            New
+                        </div>
+                        <div class="card-dismiss">
+                            X
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>This is Heading</h3>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid ab temporibus
+                            nisi suscipit vero voluptas harum laboriosam quo dignissimos modi, ea ipsam tempora nulla
+                            fuga, earum nemo assumenda quidem.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <xmp>
+                <div class="card-container card-shadow">
+                    ....
+                </div>
+            </xmp>
+
+            <hr />
+
+
+            <div id="image-component">
+
+
+                <h3>Image</h3>
+
+                <h4>Responsive Image</h4>
+
+                <div class="img-container">
+                    <img class="img-responsive"
+                        src="https://static.ghost.org/v3.0.0/images/organising-your-content.png">
+                </div>
+
+                <xmp>
+                    <img class="img-responsive" src="">
+                </xmp>
+
+                <strong>Note: </strong> Image will scale to it's parent size. Here parent is given 20 rem with just to
+                show
+                it's responsiveness.
+
+                <h4>Round Image</h4>
+
+                <div class="img-container">
+                    <img class="img-round img-responsive" src="images/square-img.jpg" alt="" srcset="">
+                </div>
+
+                <xmp>
+                    <img class="img-round img-responsive" src="">
+                </xmp>
+                <strong>Note: </strong> Round images will work perfect if image dimesion is 1:1
+
+            </div>
+            <hr>
+            <div id="input-component">
+                <h3>Input</h3>
+
+                <h4>Textbox with effect-1</h4>
+
+                <div class="input-box">
+                    <input class="effect-1" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="50"
+                        placeholder="Enter your email" />
+                    <span class="focus-border"></span>
+                </div>
+
+                <h4>Textbox with effect-2</h4>
+
+                <div class="input-box">
+                    <input class="effect-2" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="20"
+                        placeholder="Enter your password" />
+                    <span class="focus-border"></span>
+
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+
+
+            <div id="list-component">
+                <h3>List</h3>
+
+                <h4>Normal Spaced Inline List</h4>
+
+                <ul class="list non-bullet">
+                    <li class="list-item-inline">Item 1</li>
+                    <li class="list-item-inline">Item 2</li>
+                    <li class="list-item-inline">Item 3</li>
+                </ul>
+
+                <h4>Normal Space List</h4>
+
+                <ul class="list non-bullet">
+                    <li class="list-item">Item 1</li>
+                    <li class="list-item">Item 2</li>
+                    <li class="list-item">Item 3</li>
+                </ul>
+
+                <h4>Stacked List</h4>
+
+                <ul class="list non-bullet">
+                    <li class="list-item item-stacked">
+                        <img src="images/bell-icon.svg" />
+                        <span>You have new notification </span></li>
+                    <li class="list-item item-stacked">
+                        <img src="/images/avatar-icon-female.svg" style="width: 25px;"> Someone mentioned you in their
+                        story</li>
+                    <li class="list-item item-stacked">You have been tagged</li>
+                    <li class="list-item item-stacked">Someone commented on your post</li>
+                    <li class="list-item item-stacked">XYZ is live</li>
+                </ul>
+
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <div id="navigation-component">
+                <h3>Navigation</h3>
+
+                <h4>Desktop (Simple)</h4>
+
+                <nav class="navigation">
+                    <div class="nav-header">
+                        <div class="nav-title">
+                            Brand
+                        </div>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="">Github</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Twitter</a>
+                        <a href="">Instagram</a>
+                    </div>
+
+                </nav>
+
+
+            </div>
+
+            <br>
+            <br>
+            <hr>
+
+            <div id="modal-component">
+                <h3>Modal</h3>
+
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            This is Modal Title
+                        </div>
+                        <button class="modal-close-button">Close</button>
+                    </div>
+
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur quia
+                        exercitationem, quisquam corporis quasi!
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid-component">
+                <h3>Simplified Grid</h3>
+
+                <div class="grid-conatainer">
+
+                </div>
+            </div>
+
+
+
+        </div> <!--  docs div end here -->
+    </div>
+
+</body>
+
+</html>

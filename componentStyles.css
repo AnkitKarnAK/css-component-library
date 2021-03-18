@@ -5,7 +5,7 @@
     --dark-color: rgb(17, 24, 39);
     --error-color: rgb(239, 68, 68);
     --success-color: rgb(16, 185, 129);
-    --warning-color: rgb(253, 230, 138)
+    --warning-color: rgb(253, 230, 138);
 }
 
 
@@ -21,9 +21,10 @@
 /* Alert */
 .alert {
     border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 1rem;
-    width: 30em;
+    border-radius: 5px;
+    padding: 0.5rem;
+    max-width: 20em;
+
 
 }
 
@@ -168,6 +169,19 @@
 
 .icon-button>img {
     width: 100%;
+}
+
+.button-with-icon {
+    display: flex;
+    padding: 5px 10px;
+    width: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-with-icon>img {
+    max-height: 100%;
+
 }
 
 
@@ -525,4 +539,234 @@ input:focus:invalid {
 
 .modal-body {
     padding: 1rem;
+}
+
+
+
+/* Grid  */
+
+.grid-container {
+    display: grid;
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem;
+    grid-gap: 1rem;
+
+}
+
+.grid-container.two-col-1-1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-container.two-col-1-2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid-container.two-col-2-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.basic-three-item-layout {
+    grid-template-areas:
+        "basic-layout-side basic-layout-head basic-layout-head"
+        "basic-layout-side basic-layout-body basic-layout-body"
+        "basic-layout-side basic-layout-body basic-layout-body"
+}
+
+.grid-header {
+    grid-area: basic-layout-head;
+}
+
+.grid-sidebar {
+    grid-area: basic-layout-side;
+}
+
+.grid-content-body {
+    grid-area: basic-layout-body;
+}
+
+
+
+
+/* Typography */
+
+.h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.h2 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 0.4rem 0;
+}
+
+.h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0.3rem 0;
+}
+
+.h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+.h5 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+.h6 {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-large {
+    font-size: 1.2em;
+}
+
+.text-small {
+    font-size: .9em;
+}
+
+.text-tiny {
+    font-size: .8em;
+}
+
+.text-muted {
+    opacity: .8;
+}
+
+.link {
+    background: transparent;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+.link.link-active {
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--light-color);
+    padding: 0.4rem 0.2rem;
+}
+
+.link.link-primary {
+    color: var(--primary-color);
+}
+
+.link.link-primary:focus,
+.link.link-primary:hover,
+.link.link-primary:active {
+    color: var(--secondary-color);
+}
+
+
+.link.link-secondary {
+    color: var(--secondary-color);
+}
+
+.link.link-secondary:focus,
+.link.link-secondary:hover,
+.link.link-secondary:active {
+    color: var(--primary-color);
+}
+
+
+
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* Toast */
+
+.toast {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 15rem;
+    background-color: var(--light-color);
+}
+
+.toast.toast-primary {
+    color: var(--primary-color);
+    background-color: rgba(40, 116, 240, 0.2);
+    border-color: var(--primary-color);
+}
+
+.toast.toast-secondary {
+    color: var(--secondary-color);
+    background-color: rgba(75, 85, 99, 0.1);
+    border-color: var(--secondary-color);
+}
+
+.toast.toast-error {
+    color: var(--error-color);
+    background-color: rgba(239, 68, 68, 0.2);
+    border-color: var(--error-color);
+}
+
+.toast.toast-warning {
+    color: var(--warning-color);
+    background-color: rgba(253, 230, 138, 0.1);
+    border-color: var(--warning-color);
+}
+
+.toast.toast-success {
+    color: var(--success-color);
+    background-color: rgba(16, 185, 129, 0.2);
+    border-color: var(--success-color);
 }

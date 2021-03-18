@@ -78,3 +78,34 @@ body {
 .modal-container {
     position: static;
 }
+
+.col1,
+.col2 {
+
+    text-align: justify;
+}
+
+
+
+
+.text-left,
+.text-right,
+.text-center,
+.text-justify,
+.text-lowercase,
+.text-uppercase,
+.text-capitalize,
+.text-normal,
+.text-bold,
+.text-itali,
+.text-large,
+.text-small,
+.text-tiny,
+.text-muted {
+    margin: 1rem 0;
+}
+
+
+.toast {
+    margin: 0.5rem 0;
+}

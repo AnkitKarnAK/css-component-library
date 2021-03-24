@@ -5,31 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="componentStyles.css">
     <link rel="stylesheet" href="main.css">
     <title>Sky-Ui</title>
 </head>
 
-<body>
+<body class="landing-layout">
     <nav class="navigation-transparent">
         <div class="nav-header">
             <span class="nav-title-secondary">Sky</span>
-            <span class="nav-title-primary">Ui</span>
+            <span class="nav-title-primary">UI</span>
         </div>
         <div class="nav-links">
-            <button class="button-tertiary"><a href="index.html">Home</a></button>
+            <button class="button-tertiary"><a class="link-active" href="index.html">Home</a></button>
             <button class="button-tertiary"><a href="documentation.html">Documentation</a></button>
-            <button class="button-tertiary">About</button>
+            <button class="button-tertiary"><a
+                    href="https://github.com/AnkitKarnAK/css-component-library/blob/main/componentStyles.css"
+                    target="_blank">Github</a></button>
         </div>
     </nav>
 
     <div class="landing-content">
-        <div class="content-installation"></div>
+        <div class="content-installation">
+            <div class="install-header h3">
+                Installation Guide:
+            </div>
+            <span class="install-html h4">For HTML:</span>
+            <span class="install-info">
+                Copy link from below and paste it into head element of your HTML file.
+            </span>
+            <div class="carbon-iframe">
+                <iframe src="https://carbon.now.sh/embed/cBJqh81vrTbI3Haz4mCP"
+                    style="width: 640px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <span class="install-css h4">For CSS:</span>
+            <span class="install-info">
+                Copy link from below and paste on the top of your CSS file.
+            </span>
+            <div class="carbon-iframe">
+                <iframe src="https://carbon.now.sh/embed/S9KbZG0eeu5b9LDdUyJi"
+                    style="width: 532px; height: 141px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
         <div class="content-description">
             <div class="content-tagline">
                 <div class="main-line">
                     <span class="text-color-secondary">Fly in </span>
-                    <span class="text-color-primary">Sky </span>
+                    <span class="text-color-primary">Sky, </span>
                 </div>
                 <div class="second-line">
                     <span class="text-color-secondary">with our </span>
@@ -38,7 +65,7 @@
             </div>
 
             <div class="additional-info text-bold text-justify">
-                Sky-Ui is simple light weight CSS component library that will give you the easiness of using CSS like
+                Sky-UI is simple light weight CSS component library that will give you the easiness of using CSS like
                 never before & will give you feel that you're flying in sky with such a easy to use library
             </div>
 
@@ -49,6 +76,17 @@
         </div>
 
     </div>
+
+    <footer class="footer">
+        <div class="footer-title h3"> Connect me on:</div>
+        <div class="footer-links">
+            <a href="http://" target="_blank"><i class="fa fa-twitter social-icon fa-2x"></i></a>
+            <i class="fa fa-linkedin social-icon fa-2x"></i>
+            <i class="fa fa-github social-icon fa-2x"></i>
+
+
+        </div>
+    </footer>
 
 
 </body>

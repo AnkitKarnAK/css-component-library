@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
 :root {
     /* primary color in hex code: #2874f0*/
     --primary-color: rgb(40, 116, 240);
@@ -125,7 +128,7 @@
 
 .button-secondary {
     color: var(--primary-color);
-    background-color: var(--light-color);
+    background-color: transparent;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
     display: inline-block;
     outline: none;
@@ -184,7 +187,13 @@
     background-color: transparent;
 }
 
-.icon-button>img {
+.icon-button>a {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+.icon-button img {
     width: 100%;
 }
 
@@ -613,6 +622,28 @@ input:focus:invalid {
     transition: ease-out 0.3s;
 }
 
+.footer {
+    bottom: 0;
+    padding: 1rem;
+    border: 0.13rem solid rgb(40, 116, 240);
+    border-bottom-color: transparent;
+    border-top-right-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>.footer-title {
+    margin: 0.5rem;
+    margin-top: 0;
+}
+
+.footer>.footer-links {
+    display: flex;
+}
+
 /* Modal  */
 
 .modal-container {
@@ -821,13 +852,9 @@ a {
     text-decoration: none;
 }
 
-/* a:active {
-    color: var(--primary-dark);
-} */
 
 a.link-active {
     border-bottom: 1px solid var(--primary-color);
-    background-color: var(--light-color);
     padding: 0.4rem 0.2rem;
 }
 
@@ -839,9 +866,6 @@ a.link-primary:focus,
 a.link-primary:hover {
     color: var(--secondary-color);
 }
-
-
-
 
 a.link-secondary {
     color: var(--secondary-color);
@@ -872,6 +896,28 @@ a.link-secondary:active {
     margin: auto;
 }
 
+
+.social-icon {
+    padding: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin: 0rem .7rem;
+
+    border: solid 1px var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.social-icon:hover {
+    border-color: transparent;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
 
 /* Toast */
 

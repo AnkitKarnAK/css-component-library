@@ -125,3 +125,47 @@ html {
 .carbon {
     margin: 2rem;
 }
+
+
+
+/* Landing page specific */
+
+.landing-content {
+    height: 70vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-description {
+    border: 1px solid blue;
+
+}
+
+.content-tagline {
+    margin-top: 3rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main-line,
+.second-line {
+    font-size: 5rem;
+}
+
+.additional-info {
+    margin: 2rem 5rem;
+}
+
+.content-button {
+    margin-top: 3rem;
+    margin-right: 5rem;
+    text-align: right;
+}
+
+.content-button>button {
+    margin: 0 0.5rem;
+}

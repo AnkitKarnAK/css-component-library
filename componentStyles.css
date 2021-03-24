@@ -603,7 +603,12 @@ input:focus:invalid {
     font-weight: 600;
 }
 
-.navigation-transparent>.nav-links>button:hover {
+.navigation-transparent>.nav-links>button>a {
+    color: black;
+}
+
+.navigation-transparent>.nav-links>button:hover,
+.navigation-transparent>.nav-links>button:hover>a {
     color: var(--primary-color);
     transition: ease-out 0.3s;
 }
@@ -806,6 +811,10 @@ input:focus:invalid {
 
 .text-muted {
     opacity: .8;
+}
+
+.text-color-primary {
+    color: var(--primary-color);
 }
 
 a {

@@ -1,37 +1,46 @@
 body {
     margin: 0;
     padding: 0;
+
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 
 .layout {
-    border: 1px solid black;
-    margin: 0rem 10rem;
-    padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "head head head head head head"
-        "nav doc doc doc doc doc"
-        "nav doc doc doc doc doc"
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+    padding: 0 1rem;
 }
 
-.head {
-    grid-area: head;
-}
-
-.nav {
-    grid-area: nav;
-    position: fixed;
-    top: 3.5rem
+.sidebar {
+    height: 100vh;
+    margin-top: 1rem;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: initial;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-radius: 0.75rem;
+    background-color: #eaf1fe;
 }
 
 .doc {
-    grid-area: doc;
-}
-
-.component {
-    padding: 1rem;
+    border: box;
+    margin: 1rem;
+    margin-right: 0;
+    position: relative;
+    padding: 1rem 2rem;
+    background-color: #eaf1fe;
+    border-radius: 0.75rem;
 }
 
 .alert {
@@ -46,17 +55,18 @@ body {
     width: 100%;
 }
 
-.nav a {
+.sidebar a {
     text-decoration: none;
 }
 
-.nav a:link,
-.nav a:visited {
+
+.sidebar a:link,
+.sidebar a:visited {
     color: rgb(40, 116, 240);
 }
 
-.nav a:active {
-    color: hotpink;
+.sidebar a:active {
+    color: #1c51a8;
 }
 
 .float-button {
@@ -64,6 +74,8 @@ body {
     top: 0;
     left: 0;
 }
+
+
 
 .img-container {
     width: 20rem;
@@ -108,4 +120,52 @@ body {
 
 .toast {
     margin: 0.5rem 0;
+}
+
+.carbon {
+    margin: 2rem;
+}
+
+
+
+/* Landing page specific */
+
+.landing-content {
+    height: 70vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-description {
+    border: 1px solid blue;
+
+}
+
+.content-tagline {
+    margin-top: 3rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main-line,
+.second-line {
+    font-size: 5rem;
+}
+
+.additional-info {
+    margin: 2rem 5rem;
+}
+
+.content-button {
+    margin-top: 3rem;
+    margin-right: 5rem;
+    text-align: right;
+}
+
+.content-button>button {
+    margin: 0 0.5rem;
 }

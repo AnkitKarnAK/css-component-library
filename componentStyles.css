@@ -394,11 +394,11 @@
     position: relative;
 }
 
-input:focus {
+.input-box>input:focus {
     outline: none;
 }
 
-input {
+.input-box>input {
     font-size: 1em;
     color: #333;
     width: 100%;
@@ -407,7 +407,7 @@ input {
     background-color: transparent;
 }
 
-input:focus:invalid {
+.input-box>input:focus:invalid {
     background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50%;
     background-size: 25px;
 }

@@ -155,7 +155,7 @@ html {
 }
 
 .content-description {
-    border-left: 2px solid rgb(40, 116, 240);
+    /* border-left: 2px solid rgb(40, 116, 240); */
     grid-area: document;
 
 }

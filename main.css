@@ -143,7 +143,9 @@ html {
 .navigation-transparent {
     grid-area: nav;
 }
-
+#menu{
+    display: none;
+}
 
 .landing-content {
     grid-area: body;

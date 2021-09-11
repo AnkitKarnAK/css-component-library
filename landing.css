@@ -1,0 +1,90 @@
+.landing-layout {
+  padding: 0;
+  margin: 0;
+}
+.navigation-transparent {
+  padding: 0;
+}
+.nav-header {
+  display: flex;
+  padding-left: 0.5rem !important;
+}
+.nav-header > span {
+  font-size: 2rem !important;
+}
+.nav-links {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+}
+.nav-links > button {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: 1rem !important;
+}
+
+.landing-content {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-left-title {
+  font-size: 2.5rem;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.content-left-desc > button {
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+}
+.button-primary > a {
+  color: white;
+}
+.button-secondary > a {
+  color: var(--primary-color);
+}
+.content-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.content-right-title {
+  font-size: 2rem;
+}
+.content-right-html,
+.content-right-css {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-transparent {
+    height: 4rem;
+  }
+  .landing-content {
+    flex-direction: row;
+  }
+  .content-left,
+  .content-right {
+    flex: 1;
+  }
+  .content-left {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-left-title {
+    font-size: 4rem;
+  }
+  .footer {
+    height: 3rem;
+  }
+}
